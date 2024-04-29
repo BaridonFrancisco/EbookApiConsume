@@ -1,8 +1,6 @@
 package com.franciscoBaridon.Ebook_Consumo_API;
 
 
-import Model.Author;
-import Model.Book;
 import Model.Result;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.boot.CommandLineRunner;
@@ -10,8 +8,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.net.URL;
-import java.util.List;
-import java.util.Map;
 
 
 @SpringBootApplication

@@ -13,5 +13,14 @@ public record Authors(
         String deathYear
 
 
+
 ) {
+
+        @Override
+        public String toString() {
+                return " Autores->"+
+                        " Nombre: " + name +
+                        " Fecha nacimiento: " + birthDate +
+                        " Fallecimiento " + deathYear+" ";
+        }
 }

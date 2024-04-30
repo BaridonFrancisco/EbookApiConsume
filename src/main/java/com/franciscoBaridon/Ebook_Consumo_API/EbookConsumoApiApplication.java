@@ -1,6 +1,7 @@
 package com.franciscoBaridon.Ebook_Consumo_API;
 
 
+import Model.Book;
 import Model.Result;
 import Service.BookMenu;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -24,7 +25,10 @@ public class EbookConsumoApiApplication implements CommandLineRunner {
 		BookMenu bookMenu=new BookMenu();
 		//var resultado=bookMenu.searchBook("dickens");
 		//System.out.println(resultado);
-		bookMenu.top10Books();
+		//bookMenu.top10Books();
+		bookMenu.searchBook("dickens great");
+
+
 
 
 	}

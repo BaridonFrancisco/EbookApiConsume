@@ -13,7 +13,14 @@ public record Result(
         List<Book>resultados
 
 
+
+
 ) {
 
 
+        @Override
+        public String toString() {
+                return "cantidad=" + cantidad +" "+ resultados.toString();
+
+        }
 }

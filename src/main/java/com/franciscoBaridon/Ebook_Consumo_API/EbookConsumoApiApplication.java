@@ -2,6 +2,7 @@ package com.franciscoBaridon.Ebook_Consumo_API;
 
 
 import Model.Result;
+import Service.BookMenu;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -20,9 +21,10 @@ public class EbookConsumoApiApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		ObjectMapper mapper = new ObjectMapper();
-		var re=mapper.readValue(new URL("https://gutendex.com/books?ids=1"),Result.class);
-		System.out.println(re);
+		BookMenu bookMenu=new BookMenu();
+		//var resultado=bookMenu.searchBook("dickens");
+		//System.out.println(resultado);
+		bookMenu.top10Books();
 
 
 	}
